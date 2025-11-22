@@ -6,6 +6,7 @@ $(document).ready(function () {
             models: {
                 "MI Max/MI Max 2": "images/mimax.png",
                 "MI Note 3": "images/minote3.png",
+                "POCO X3/X3 NFC": "images/x3nfc.png",
             }
         },
 
@@ -53,7 +54,7 @@ $(document).ready(function () {
         const m = data[b].models;
 
         $("#model-list").html("").show();
-        $("#preview").html("<span>Select a model for test point.</span>");
+        $("#preview").html("<span></span>");
 
         for (let x in m) {
             $("#model-list").append(`
@@ -70,3 +71,4 @@ $(document).ready(function () {
     });
 
 });
+
